@@ -8,6 +8,62 @@ A full-stack web application that provides weather information, currency convers
 - **Currency Converter**: Convert INR to USD/EUR with real-time exchange rates
 - **Quote Generator**: Get random motivational quotes
 
+## Prerequisites
+
+Before you begin, ensure you have:
+- Node.js (LTS version) installed
+- npm (comes with Node.js)
+- API keys for:
+  - [OpenWeatherMap](https://openweathermap.org/api)
+  - [ExchangeRate API](https://www.exchangerate-api.com/)
+
+## Quick Start
+
+1. **Clone and Install**
+   ```bash
+   git clone https://github.com/Sanjaygoud28/Infohub_challange.git
+   cd Infohub_challange
+   ```
+
+2. **Set up Frontend**
+   ```bash
+   # Install dependencies
+   npm install
+   ```
+
+3. **Set up Backend**
+   ```bash
+   # Go to backend folder
+   cd backend
+   
+   # Install dependencies
+   npm install
+   
+   # Create environment file
+   copy .env.example .env
+   ```
+
+4. **Configure API Keys**
+   - Open `backend/.env`
+   - Add your API keys:
+     ```
+     OPENWEATHER_API_KEY=your_key_here
+     EXCHANGE_RATE_API_KEY=your_key_here
+     PORT=3000
+     FRONTEND_URL=http://localhost:5173
+     ```
+
+5. **Start the Application**
+   ```bash
+   # Start backend (in backend folder)
+   npm start
+   
+   # Start frontend (in root folder)
+   npm run dev
+   ```
+   - Backend runs on: http://localhost:3000
+   - Frontend runs on: http://localhost:5173
+
 ## Tech Stack
 
 ### Frontend
