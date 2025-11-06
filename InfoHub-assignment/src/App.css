@@ -1,0 +1,58 @@
+/* App container visual */
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.app-shell {
+  width: 100%;
+  max-width: 980px;
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+/* Tabs */
+.MuiTabs-root {
+  margin-bottom: 8px;
+}
+.MuiTab-root {
+  text-transform: none;
+  font-weight: 600;
+}
+
+/* Card defaults for our components */
+.app-card {
+  margin: 0 auto;
+  max-width: 640px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,250,0.98));
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(2,6,23,0.06);
+  border: 1px solid rgba(2,6,23,0.04);
+}
+
+.card-content-centered { text-align: center; }
+
+.control-row { display:flex; gap:12px; align-items:center; }
+
+.muted { color: var(--muted); }
+
+.error { color: var(--danger); margin-top: 12px; }
+
+.loading-wrap { display:flex; align-items:center; justify-content:center; padding: 18px 0; }
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .app-shell { padding: 18px; }
+  .app-card { padding: 12px; width: 100%; }
+}
+
+/* small utilities for component spacing */
+.spacer { height: 12px; }
+
